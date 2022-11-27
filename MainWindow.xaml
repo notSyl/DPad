@@ -1,0 +1,17 @@
+﻿<Window x:Class="Dpad.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Dpad"
+        mc:Ignorable="d"
+        Title="Wer das liest ist cool" Height="450" Width="800">
+    <DockPanel Background="#28282C">
+        <WrapPanel HorizontalAlignment="Left" DockPanel.Dock="Top">
+            <Button Name="btnSaveFile" Click="btnSaveFile_Click" Padding="3" Background="#323236" FontWeight="DemiBold" BorderThickness="0" Foreground="#C8C8CD">Save file</Button>
+        </WrapPanel>
+        <TextBox Name="Textbox" KeyDown="btnSaveFile_Key" MouseWheel="ScrollZoom" Background="#1E1E22" Foreground="White" BorderThickness="0" FontSize="15" FontFamily="Lucida Sans" AcceptsReturn="True" Padding="3">
+            <TextBlock.LineHeight>20</TextBlock.LineHeight>
+        </TextBox>
+    </DockPanel>
+</Window>
